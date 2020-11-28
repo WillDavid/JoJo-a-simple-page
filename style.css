@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/bg.png');  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 330px;
+    height: 420px;
+    margin: 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 3px solid rgb(225, 225, 9);
+
+}
+
+
+
+.jotaro {
+    background-image: url('./img/bgJotaro.jpg');
+    background-size: cover;
+}
+.kakyoin {
+    background-image: url('./img/bgKakyoin.jpg');
+    background-size: cover;
+}
+.polnareff {
+    background-image: url('./img/bgPolnareff.jpg');
+    background-size: cover;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.card img:hover{
+    scale: 1.3;   
+}
+.card:hover {
+    scale: 1.1;
+
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        height: 100%;
+    }
+}
